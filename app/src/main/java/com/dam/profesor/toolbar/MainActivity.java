@@ -1,5 +1,6 @@
 package com.dam.profesor.toolbar;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -39,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings1_1) {
 
-            String a = "hola mundo";
-            texto.setText(a);
+            Intent intent = new Intent(MainActivity.this, ThemedActivity.class);
+            startActivity(intent);
 
             return true;
         }
